@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'DOORWEBOFFICE1_VERSION', '5.0.0' );
+define( 'DOORWEBOFFICE1_VERSION', '5.1.0' );
 
 /* -------------------------------------------------------------------------
  * 1. 테마 기본 support

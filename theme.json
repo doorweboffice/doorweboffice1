@@ -50,6 +50,9 @@
 			"heading": { "typography": { "fontWeight": "700", "lineHeight": "1.25" } }
 		}
 	},
+	"customTemplates": [
+		{ "name": "page-landing", "title": "랜딩 (제목·여백 없음)", "postTypes": [ "page" ] }
+	],
 	"templateParts": [
 		{ "name": "header", "title": "Header", "area": "header" },
 		{ "name": "footer", "title": "Footer", "area": "footer" }
