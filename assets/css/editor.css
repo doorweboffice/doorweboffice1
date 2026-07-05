@@ -1,0 +1,7 @@
+/* 에디터 전용: 슬라이더 트랙을 세로로 펼쳐 각 슬라이드를 편하게 편집 */
+.dwo-slider-track {
+	display: block !important;
+}
+.dwo-slider-track > * {
+	margin-block-end: 1rem !important;
+}

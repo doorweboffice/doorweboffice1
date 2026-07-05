@@ -4,12 +4,13 @@
  * Slug: doorweboffice1/hero-company
  * Categories: doorweboffice1
  * Viewport Width: 1400
- * Description: 좌측 정렬 헤드라인 + CTA. 커버 블록에 배경 이미지를 추가하고 오버레이 불투명도를 50~60으로 낮추면 스크린샷과 같은 연출이 됩니다.
+ * Description: 좌측 정렬 헤드라인 + CTA. 커버 블록에 배경 이미지를 추가하고 오버레이 불투명도를 50~60으로 낮추면 사진 위 텍스트 연출이 됩니다.
  */
 ?>
-<!-- wp:cover {"dimRatio":100,"overlayColor":"primary","minHeight":620,"contentPosition":"center left","align":"full","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull has-custom-content-position is-position-center-left" style="min-height:620px"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
-<!-- wp:heading {"level":1,"textColor":"base","fontSize":"x-large"} -->
+<!-- wp:cover {"dimRatio":100,"overlayColor":"primary","minHeight":620,"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull" style="min-height:620px"><span aria-hidden="true" class="wp-block-cover__background has-primary-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container">
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"level":1,"textColor":"base","fontSize":"x-large"} -->
 <h1 class="wp-block-heading has-base-color has-text-color has-x-large-font-size">기술로 미래를 만들고,<br>신뢰로 세상을 연결합니다</h1>
 <!-- /wp:heading -->
 <!-- wp:paragraph {"textColor":"base","fontSize":"medium"} -->
@@ -19,5 +20,6 @@
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"accent","textColor":"primary"} -->
 <div class="wp-block-button"><a class="wp-block-button__link has-primary-color has-accent-background-color has-text-color has-background wp-element-button">회사소개 보기 →</a></div>
 <!-- /wp:button --></div>
-<!-- /wp:buttons --></div></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
 <!-- /wp:cover -->

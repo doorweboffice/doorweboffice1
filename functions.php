@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'DOORWEBOFFICE1_VERSION', '5.1.0' );
+define( 'DOORWEBOFFICE1_VERSION', '5.2.0' );
 
 /* -------------------------------------------------------------------------
  * 1. 테마 기본 support
@@ -16,10 +16,18 @@ add_action( 'after_setup_theme', function () {
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script' ) );
 	add_theme_support( 'post-thumbnails' );
+	add_editor_style( array( 'style.css', 'assets/css/editor.css' ) );
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
 	wp_enqueue_style( 'doorweboffice1-style', get_stylesheet_uri(), array(), DOORWEBOFFICE1_VERSION );
+	wp_enqueue_script(
+		'doorweboffice1-slider',
+		get_theme_file_uri( 'assets/js/slider.js' ),
+		array(),
+		DOORWEBOFFICE1_VERSION,
+		array( 'in_footer' => true, 'strategy' => 'defer' )
+	);
 } );
 
 /* -------------------------------------------------------------------------

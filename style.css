@@ -7,9 +7,65 @@ Description: AI/GEO 최적화 독립 블록 테마(FSE). 빌더 의존 없음. J
 Requires at least: 6.5
 Tested up to: 6.7
 Requires PHP: 8.0
-Version: 5.1.0
+Version: 5.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: doorweboffice1
 Tags: block-templates, full-site-editing, blog, business, seo-ready
 */
+
+/* 루트 블록(헤더/메인/푸터) 사이 기본 24px 간격 제거 */
+.wp-site-blocks > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* 섹션 레벨 간격 제거: main 직계(post-content 등) + 본문 직계(각 섹션).
+   섹션 내부 문단·제목 간격은 유지됨 */
+body main.wp-block-group > *,
+body .wp-block-post-content > * {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/* 히어로 슬라이더 (scroll-snap, no deps) */
+.dwo-slider {
+	position: relative;
+}
+.dwo-slider-track {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scrollbar-width: none;
+	-webkit-overflow-scrolling: touch;
+}
+.dwo-slider-track::-webkit-scrollbar {
+	display: none;
+}
+.dwo-slider-track > * {
+	flex: 0 0 100%;
+	min-width: 100%;
+	scroll-snap-align: start;
+	margin: 0 !important;
+}
+.dwo-slider-dots {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 0.5rem;
+	z-index: 2;
+}
+.dwo-slider-dot {
+	width: 10px;
+	height: 10px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.45);
+	cursor: pointer;
+}
+.dwo-slider-dot.is-active {
+	background: var(--wp--preset--color--accent, #C8A24B);
+}
