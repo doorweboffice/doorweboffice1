@@ -37,7 +37,9 @@ Customizer(사용자 정의)는 FSE에서 미지원이며 의도적으로 배제
 - [ ] 데모 콘텐츠 1세트 (상세페이지·포트폴리오 스크린샷용) — "30분 셋업" 과정 스크린샷 확보
 - [ ] 카페24 심사 규정에서 타 채널(GitHub) 무료 배포 배타성 조항 여부 확인
 - [ ] 배포 zip 패키징: HANDOFF.md/README.md/.gitignore 제외
-- [ ] 사용자 매뉴얼 제작 (구매자용 설정 가이드 — 홈 구성, 슬라이더 편집, 이미지 교체 등. 전체 작업 완료 후 진행 예정)
+- [ ] 사용자 매뉴얼 제작 (구매자용 설정 가이드 — 홈 구성, 슬라이더 편집(높이/오버레이/색), 로고 등록, 이미지 교체, 패턴 재삽입 규칙. 전체 작업 완료 후 진행 예정)
+- [ ] single 템플릿에 특성 이미지 자동 히어로 추가 (커버 "특성 이미지 사용" + 글 제목 — 글마다 자동 히어로)
+- [ ] 스키마 감지 목록 확장: doorweboffice1_seo_plugin_active()에 SEOPress(defined SEOPRESS_VERSION), Slim SEO(class SlimSEO\Plugin 확인 필요) 추가 — 목록 밖 스키마 플러그인과 이중 출력 방지. 수동 스위치는 이미 존재: add_filter('doorweboffice1_enable_schema', '__return_false')
 
 ## 광고 문구 골격 (상세페이지·README용)
 
